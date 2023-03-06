@@ -9,12 +9,12 @@ public class ReadBinary {
       System.out.println(myData);
       //DataInputStream  is = new DataInputStream(new FileInputStream("myData.ser"));
       ObjectInputStream is = new ObjectInputStream( new FileInputStream("arrayOfInt.ser"));
-      myData = (int[]) is.readObject();
-      System.out.println(myData);
+      // myData = (int[]) is.readObject();
+      // System.out.println(myData);
 
       // get values from file into array
-      //for (int i=0; i<5; i++) 
-         //myData[i] = is.readInt();
+      for (int i=0; i<5; i++) 
+         myData[i] = is.readInt();
          
       // display values in array
       for (int i: myData)

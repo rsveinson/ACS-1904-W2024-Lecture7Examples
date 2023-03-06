@@ -11,10 +11,10 @@ public class WriteBinary {
       //DataOutputStream  os = new DataOutputStream(new FileOutputStream("myData.ser"));
       // create an object to reference practitioners.ser
       ObjectOutputStream os = new ObjectOutputStream( new FileOutputStream("arrayOfInt.ser"));
-      os.writeObject(myData);
+      // os.writeObject(myData);
       
-      // for (int i=0; i<5; i++) 
-        // os.writeInt(myData[i]);
+      for (int i=0; i<5; i++) 
+        os.writeInt(myData[i]);
       
       os.close();
    }
