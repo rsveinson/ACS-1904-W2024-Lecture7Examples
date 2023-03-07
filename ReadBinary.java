@@ -7,8 +7,8 @@ public class ReadBinary {
        
       int[] myData = new int[5];
       System.out.println(myData);
-      //DataInputStream  is = new DataInputStream(new FileInputStream("myData.ser"));
-      ObjectInputStream is = new ObjectInputStream( new FileInputStream("arrayOfInt.ser"));
+      DataInputStream  is = new DataInputStream(new FileInputStream("myData.ser"));
+      //ObjectInputStream is = new ObjectInputStream( new FileInputStream("arrayOfInt.ser"));
       // myData = (int[]) is.readObject();
       // System.out.println(myData);
 
@@ -19,7 +19,7 @@ public class ReadBinary {
       // display values in array
       for (int i: myData)
         System.out.println(i);
-      System.out.println(myData);  
+      //System.out.println(myData);  
       is.close();
    }
 }
