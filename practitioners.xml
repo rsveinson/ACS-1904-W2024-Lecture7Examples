@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="11.0.2" class="java.beans.XMLDecoder">
- <object class="Doctor">
-  <void property="firstName">
-   <string>Jill</string>
+<java version="11.0.14.1" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="Practitioner">
+    <void property="firstName">
+     <string>Sam</string>
+    </void>
+    <void property="gender">
+     <string>female</string>
+    </void>
+    <void property="lastName">
+     <string>Smith</string>
+    </void>
+   </object>
   </void>
-  <void property="gender">
-   <string>female</string>
+  <void method="add">
+   <object class="Doctor">
+    <void property="firstName">
+     <string>Jill</string>
+    </void>
+    <void property="gender">
+     <string>female</string>
+    </void>
+    <void property="lastName">
+     <string>Jones</string>
+    </void>
+    <void property="specialty">
+     <string>Dermatology</string>
+    </void>
+   </object>
   </void>
-  <void property="lastName">
-   <string>Jones</string>
-  </void>
-  <void property="specialty">
-   <string>Dermatology</string>
+  <void method="add">
+   <object class="Pharmacist">
+    <void property="firstName">
+     <string>Eddy</string>
+    </void>
+    <void property="gender">
+     <string>male</string>
+    </void>
+    <void property="lastName">
+     <string>Edwards</string>
+    </void>
+    <void property="location">
+     <string>Drugco</string>
+    </void>
+   </object>
   </void>
  </object>
- <double>4.5</double>
 </java>

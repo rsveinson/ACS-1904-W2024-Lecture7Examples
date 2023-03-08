@@ -22,9 +22,9 @@ public class PractitionersToXML {
       XMLEncoder  encoder = new XMLEncoder(new FileOutputStream("practitioners.xml"));
       
       // write out the practitioner object graph
-      //encoder.writeObject(practitioners);
-      encoder.writeObject(dr);
-      encoder.writeObject(dr.getGPa());
+      encoder.writeObject(practitioners);
+      // encoder.writeObject(dr);
+      // encoder.writeObject(dr.getGPa());
       System.out.println("object(s) written to file.");
       
       // close the xml file
