@@ -12,7 +12,8 @@ public class ReadPrimitiveDataFromXML {
       
       for (int i=0; i<5; i++) 
           myData[i] = (int) decoder.readObject();
-          
+       
+          //myData = decoder.readObject();
       // display the array and close the file
       for (int i: myData)
           System.out.println(i);
