@@ -10,6 +10,7 @@ public class WritePrimitiveDataToXML {
       
       for (int i=0; i<5; i++) 
           encoder.writeObject(myData[i]);
+          
       //encoder.writeObject(myData);    
       encoder.close();
     }

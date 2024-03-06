@@ -15,7 +15,7 @@
    </object>
   </void>
   <void method="add">
-   <object class="Doctor" id="Doctor0">
+   <object class="Doctor">
     <void property="firstName">
      <string>Jill</string>
     </void>
@@ -47,6 +47,4 @@
    </object>
   </void>
  </object>
- <object idref="Doctor0"/>
- <double>4.5</double>
 </java>
