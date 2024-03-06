@@ -13,8 +13,8 @@ public class WriteBinary {
       ObjectOutputStream os = new ObjectOutputStream( new FileOutputStream("arrayOfInt.ser"));
       os.writeObject(myData);
       
-      for (int i=0; i<5; i++) 
-        os.writeInt(myData[i]);
+      // for (int i=0; i<5; i++) 
+        // os.writeInt(myData[i]);
       
       os.close();
       

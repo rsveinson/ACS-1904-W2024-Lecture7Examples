@@ -30,7 +30,9 @@ public class RedirectOutputToFile{
         
         // note the argument
         PrintStream ps = new PrintStream(fs);
-        String strin = scanner.next();
+        
+        // read from the keyboard to pause execution so we can look at the file
+        //String strin = scanner.next();
         // new set the new stream as default
         System.setOut(ps);
         
@@ -38,7 +40,8 @@ public class RedirectOutputToFile{
         System.out.print("and this ");
         System.out.println("and also this.");
         
-         strin = scanner.next();
+        // read from the keyboard to pause execution so we can look at the file 
+        //strin = scanner.next();
         ps.close();     // don't forget to close the file
         
         // and re-set output to standard
