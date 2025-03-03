@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="11.0.14.1" class="java.beans.XMLDecoder">
+<java version="17.0.4.1" class="java.beans.XMLDecoder">
  <object class="java.util.ArrayList">
   <void method="add">
    <object class="Practitioner">
-    <void property="firstName">
-     <string>Sam</string>
-    </void>
     <void property="gender">
      <string>female</string>
     </void>
@@ -16,9 +13,6 @@
   </void>
   <void method="add">
    <object class="Doctor">
-    <void property="firstName">
-     <string>Jill</string>
-    </void>
     <void property="gender">
      <string>female</string>
     </void>
@@ -32,9 +26,6 @@
   </void>
   <void method="add">
    <object class="Pharmacist">
-    <void property="firstName">
-     <string>Eddy</string>
-    </void>
     <void property="gender">
      <string>male</string>
     </void>
