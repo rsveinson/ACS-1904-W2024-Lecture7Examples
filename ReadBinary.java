@@ -24,7 +24,7 @@ public class ReadBinary {
 
         // // display values in array
         // for (int i: myData)
-            // System.out.println(i);
+        // System.out.println(i);
 
         // using an eof loop (sort of)
         int count = 0;      // counter and indexer
@@ -34,6 +34,7 @@ public class ReadBinary {
             count++;            // another int read into the array
         }// end eof'ish
 
+        is.close();
         // the problem with a for-each loop here
         // it will print the entire size of the array even
         // if it (the array) is only partially filled
@@ -44,6 +45,6 @@ public class ReadBinary {
             System.out.println(myData[i]);
         }//end print list
         System.out.println(myData);  
-        is.close();
+        
     }
 }

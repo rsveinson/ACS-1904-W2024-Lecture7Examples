@@ -32,16 +32,24 @@ public class RedirectOutputToFile{
         PrintStream ps = new PrintStream(fs);
         
         // read from the keyboard to pause execution so we can look at the file
-        //String strin = scanner.next();
-        // new set the new stream as default
-        System.setOut(ps);
+        String strin = scanner.next();
+        
+        /* we can now print to the output stream
+         * in the following manner
+         */
+        ps.println("print to the output file using the print stream.");
+        
+        /* or we can set the default output stream
+         * to the new steam we just created
+         */
+        //System.setOut(ps);
         
         System.out.println("2. this should go to the file.");
         System.out.print("and this ");
-        System.out.println("and also this.");
+        System.out.println("and also this. I'm not making things up, it really does overwrite.");
         
         // read from the keyboard to pause execution so we can look at the file 
-        //strin = scanner.next();
+        strin = scanner.next();
         ps.close();     // don't forget to close the file
         
         // and re-set output to standard

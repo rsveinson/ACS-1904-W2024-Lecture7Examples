@@ -1,2 +1,1 @@
-2. this should go to the file.
-and this and also this.
+print to the output file using the print stream.
