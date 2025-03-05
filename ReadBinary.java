@@ -2,6 +2,7 @@ import java.io.ObjectInputStream;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Arrays;
 public class ReadBinary {
     public static void main(String[] args)throws IOException, ClassNotFoundException{
 
@@ -10,7 +11,7 @@ public class ReadBinary {
         DataInputStream  is = new DataInputStream(new FileInputStream("myData.ser"));
         // ObjectInputStream is = new ObjectInputStream( new FileInputStream("arrayOfInt.ser"));
         // myData = (int[]) is.readObject();
-        // System.out.println(myData);
+        // System.out.println(Arrays.toString(myData));
 
         // get values from file into array
         /* note if we try to read
@@ -29,12 +30,13 @@ public class ReadBinary {
         // using an eof loop (sort of)
         int count = 0;      // counter and indexer
 
-        while(is.available() > 0){  // true means more bytes to read
+        while(is.available() >= 0){  // true means more bytes to read
             myData[count] = is.readInt();
             count++;            // another int read into the array
         }// end eof'ish
 
         is.close();
+        
         // the problem with a for-each loop here
         // it will print the entire size of the array even
         // if it (the array) is only partially filled
