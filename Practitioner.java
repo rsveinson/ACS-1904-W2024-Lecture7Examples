@@ -20,7 +20,7 @@ public class Practitioner implements Serializable{
     public double getGPa(){
         return gpa;
     }
-    public String getfirstName(){
+    public String getFirstName(){
         return firstName;
     }
     

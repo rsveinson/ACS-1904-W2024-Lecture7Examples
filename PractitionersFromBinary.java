@@ -19,7 +19,7 @@ public class PractitionersFromBinary {
          String type="practitioner";
          if (p instanceof Doctor) type="doctor";
          if (p instanceof Pharmacist) type="pharmacist";
-         //System.out.println(type+" "+p.getFirstName());
+         System.out.println(type+" "+p.getFirstName());
       }
       
       System.out.println("\nend of program");

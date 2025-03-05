@@ -18,6 +18,9 @@ public class PractitionersToXML {
       practitioners.add(dr);
       practitioners.add(ph);
       
+      // using the no-arg constructor
+      //practitioners.add(new Doctor());
+      
       // the encoder object references the file
       XMLEncoder  encoder = new XMLEncoder(new FileOutputStream("practitioners.xml"));
       

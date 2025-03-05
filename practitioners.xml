@@ -3,6 +3,9 @@
  <object class="java.util.ArrayList">
   <void method="add">
    <object class="Practitioner">
+    <void property="firstName">
+     <string>Sam</string>
+    </void>
     <void property="gender">
      <string>female</string>
     </void>
@@ -13,6 +16,9 @@
   </void>
   <void method="add">
    <object class="Doctor">
+    <void property="firstName">
+     <string>Jill</string>
+    </void>
     <void property="gender">
      <string>female</string>
     </void>
@@ -26,6 +32,9 @@
   </void>
   <void method="add">
    <object class="Pharmacist">
+    <void property="firstName">
+     <string>Eddy</string>
+    </void>
     <void property="gender">
      <string>male</string>
     </void>
